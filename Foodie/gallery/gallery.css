@@ -1,0 +1,159 @@
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0 100px;
+    background-color: #ffeae0;
+}
+
+#logo{
+	color: black;
+}
+
+/*menu*/
+
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.nav .logo h1{
+    font-size: 50px;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: black;
+}
+
+.nav .logo b{
+    color: #ff511c;
+}
+
+.nav ul{
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li{
+    margin-right: 40px;
+}
+
+.nav ul li:hover{
+    cursor: pointer;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+/*active*/
+.nav ul .active::after{
+    content: '';
+    width: 50%;
+    height: 3px;
+    background-color: #ff511c;
+    display: flex;
+    position: relative;
+    margin-left: 10px;
+}
+
+/*input*/
+input{
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.logout{
+    background-color: #ff511c;
+    color: #ffffff;
+    outline: none;
+    border:none;
+    border-radius: 5px;
+    width: 100px;
+    font-size: medium;
+    cursor: pointer;
+}
+#gallery{
+	text-align: center;
+	font-weight: 600;
+    font-size: 50px;
+    font-family: sans-serif;
+    color: black;
+	margin-top: 30px;
+}
+
+span{
+	color: #ff511c;
+}
+.img-gallery{
+	width: 80%;
+	margin: 70px auto 50px;
+	display: grid;
+	grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)) ;
+	grid-gap: 30px;
+}
+
+.img-gallery img{
+	width: 100%;
+	cursor: pointer;
+	padding: 0;
+  transition: transform .2s; 
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+.img-gallery img:hover{
+	transform: scale(1.2);
+	border-radius: 20px;
+	box-shadow: 0 20px 20px #ff511c;
+}
+
+
+.full-img{
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.9);
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	z-index: 100;
+}
+
+.full-img img{
+	width:100%;
+	max-width: 800px;
+
+}
+
+.full-img span{
+	position: absolute;
+	top: 5%;
+	right: 5%;
+	font-size: 30px;
+	color: #fff;
+	cursor: pointer;
+
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    border: radius 20px; 
+    background-color: #ff511c;
+}
+
+

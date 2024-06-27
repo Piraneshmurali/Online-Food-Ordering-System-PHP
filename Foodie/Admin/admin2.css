@@ -1,0 +1,117 @@
+/* admin2.css */
+
+/* Sidebar */
+*{
+  font-family: sans-serif;
+}
+
+body{
+  background-color: #ffeae0;
+  
+}
+.sidebar {
+    width: 200px;
+    background: #ffeae0;
+    color: black;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    border: 2px solid #ff511c ;
+  }
+  
+  .sidebar-brand {
+    padding: 10px;
+    text-align: center;
+    font-size: large;
+    color: black;
+    background-color:#ff511c ;
+  }
+  
+  .sidebar-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+    
+  }
+  
+  .sidebar-menu ul li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar-menu ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    border-bottom: 1px solid #ff511c;
+  }
+
+  .sidebar-menu ul li a:hover{
+    background: #ff511c;
+  }
+  
+  .sidebar-menu ul li a.active {
+    background: #ff511c;
+    color: #ffeae0;
+  }
+  
+  /* Main */
+  main {
+    margin-left: 200px;
+    padding: 20px;
+  }
+  
+  .form-container {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input[type="text"],
+  .form-group textarea,
+  .form-group input[type="file"],
+  .form-group input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ff511c;
+    border-radius: 4px;
+  }
+  
+  button[type="submit"] {
+    background: #ff511c;
+    color: #ffeae0;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background: #ff7e4d;
+  }
+
+  .menu-item [type="text"],
+  .menu-item [type="file"],
+  .menu-item [type="number"],
+  .menu-item textarea {
+    border: 1px solid #ff511c;
+    border-radius: 4px;
+    padding: 5px;
+  }
+
+
+::-webkit-scrollbar{
+    width:10px;
+}
+::-webkit-scrollbar-thumb{
+    border: radius 20px;
+    background-color: #ff511c;
+}

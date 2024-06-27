@@ -1,0 +1,98 @@
+* {
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #ffeae0;
+}
+
+.sidebar {
+  width: 200px;
+  background: #ffeae0;
+  color: black;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  border: 2px solid #ff511c;
+}
+
+.sidebar-brand {
+  padding: 10px;
+  text-align: center;
+  font-size: large;
+  color: black;
+  background-color: #ff511c;
+}
+
+.sidebar-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.sidebar-menu ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar-menu ul li a {
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  border-bottom: 1px solid #ff511c;
+}
+
+.sidebar-menu ul li a:hover {
+  background: #ff511c;
+}
+
+.sidebar-menu ul li a.active {
+  background: #ff511c;
+  color: #ffeae0;
+}
+
+.table-container {
+  margin-left: 220px;
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #ff511c;
+  color: #ffeae0;
+}
+
+select {
+  width: 50%;
+  padding: 5px;
+  margin: 5px 0;
+}
+
+.assign-button {
+  background-color: #ff511c;
+  color: #ffeae0;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: #ff511c;
+}
